@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Mubekin</title>
+      <link rel="stylesheet" href="./style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+      <link rel="icon" href="https://i.ibb.co/Dpz7FCb/mubekin.webp" alt="mubekin">
+      <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,800,900&display=swap" rel="stylesheet">
+    
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800,900&display=swap" rel="stylesheet">
+      
+      <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,700,800,900&display=swap" rel="stylesheet">
+   </head>
+   <body onload="loaderFunction()">
+
+      <div id="loader">
+          <div class="loading">
+          <span></span>
+          </div>
+      </div>
+      <div id="page">
+            <nav>
+               <div class="logo noselect">
+                  <img class="noselect" src="https://i.ibb.co/Dpz7FCb/mubekin.webp" alt="mubekin">
+                   Mubekin Bot
+               </div>
+
+               <div class="openMenu noselect"><i class="fa fa-bars"></i></div>
+               <ul class="mainMenu noselect">
+                  <li><a class="active" href="#"><i class=""></i> Home</a></li>
+                  <li><a href="commands.html"><i class="f"></i> Commands</a></li>
+                  <li><a href="https://discord.gg/aTzduKANKh" target="_none"><i class=""></i> Support</a></li>
+                  <li><a class="active" href="#"><i class=""></i>Documents</a></li>
+                  <div class="closeMenu noselect"><i class="fa fa-times"></i></div>
+               </ul>
+            </nav>
+      </div>
+      <div class="content noselect">
+            <div class="heading text-center">
+                <img id="botLogo" class="noselect" src="https://i.ibb.co/Dpz7FCb/mubekin.webp">
+                <h1 class="title">Mubekin</h1>
+                <p class="subtitle">Time to speed up your Discord server with Mubekin Bot!</p>
+                <br />
+                <a class="btn btn-primary" href="https://is.gd/piKltQ" target="_none" role="button"><i class="fab fa-discord"></i> Add to server</a>
+                <a class="btn btn-secondary" href="https://discord.gg/vfWYPuhWyP" role="button"><i class="far fa-list-alt"></i> Support Server</a><br /><br />
+                <a class="btn btn-secondary" role="button" onclick="var un = prompt('Your Discord username (e.g. Mubekin#5973) '); var fb = prompt('What you want to tell us? '); sendMessage('```diff\n- ' + un + ' said: ' + fb + '\n```');alert('Thanks! Your feedback is shared in our support server!')"> Send Feedback</a>
+            </div>
+      </div>
+   </body>
+</html>
+<script src="script.js"></script>
+<script>
+    function sendMessage(msg) {
+        const request = new XMLHttpRequest();
+        request.open("POST", "https://discord.com/api/webhooks/1009748448175722560/gR6hzFcafFBH0rGqHpcfX8Tfr-EMvrADi32rQMjIp_4xpFcSBneGVb5-4PB82QK5AFmR");
+        //You should add webhook url up ^^^^^^
+
+        request.setRequestHeader('Content-type', 'application/json');
+
+        const params = {
+            username: "Mubekin Feedback",
+            avatar_url: "https://i.ibb.co/Dpz7FCb/mubekin.webp",
+            content: msg
+        }
+
+        request.send(JSON.stringify(params));
+    }
+</script>
+              

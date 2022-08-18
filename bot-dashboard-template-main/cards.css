@@ -1,0 +1,243 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    background-image: url("https://cdn.discordapp.com/attachments/998883987856556085/1007907602019143761/mubekin-background.jfif");
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+hr {
+    border: 3px solid white;
+}
+
+summary {
+    color: white;
+    font-size: xx-large;
+}
+
+#mube_cmds {
+    color: white;
+    font-size: 75px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#mube_cmds_info {
+    font-size: 25px;
+    color: rgba(255, 255, 255, 0.75);
+    text-align: center;
+}
+
+#mube_logo {
+    height: 90px;
+    border-radius: 100px;
+    text-align: center;
+    filter: brightness(150%);
+    border: 2px solid white;
+    cursor: pointer;
+    right: 50px;
+}
+
+#mube_logo:hover {
+    filter: brightness(200%);
+}
+
+#header_stuff {
+    text-align: center;
+}
+
+.card-container {
+    padding: 30px;
+}
+
+
+.heading {
+    text-align: center;
+}
+
+.heading__title {
+    font-weight: 600;
+}
+
+.heading__credits {
+    margin: 10px 0px;
+    color: #888888;
+    font-size: 25px;
+    transition: all 0.5s;
+}
+
+.heading__link {
+    text-decoration: none;
+}
+
+.heading__credits .heading__link {
+    color: inherit;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    margin: 20px;
+    padding: 20px;
+    width: 500px;
+    height: 250px;
+    display: inline-grid;
+    grid-template-rows: 20px 50px 1fr 50px;
+    border-radius: 10px;
+    box-shadow: 6px 6px 10px rgba(255, 255, 255, 0.25);
+    transition: all .2s;
+}
+
+.card:hover {
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+    transform: scale(1.02);
+}
+
+.card__link,
+.card__exit {
+    position: relative;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.card__link::after {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.6);
+    transition: all 0.5s;
+}
+
+.card__link:hover::after {
+    width: 100%;
+}
+
+.card__icon {
+    grid-row: 2/3;
+    font-size: 30px;
+}
+
+.card__title {
+    grid-row: 3/4;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.card__apply {
+    grid-row: 4/5;
+    align-self: center;
+}
+
+@media (max-width: 1600px) {
+    .cards {
+        justify-content: center;
+    }
+}
+
+#command_name {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+i.parameter {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 25px;
+}
+
+i.parameter:hover {
+    color: rgba(255, 255, 255, 1);
+    transition: .2s;
+}
+
+.alias {
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*
+    - Card Stuff -
+*/
+
+.card {
+    background: rgba(0, 0, 0, 0.5);
+    border: 3px solid blue;
+}
+
+/*
+    - Animation
+*/
+
+details[open] summary ~ * {
+    animation: open 0.5s ease-in-out;
+}
+
+@keyframes open {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fontsize {
+    0% {
+        font-weight: 200
+    }
+
+    100% {
+        font-weight: bold;
+    }
+}
+
+details summary {
+    width: 100%;
+    padding: 0.5rem 0;
+    position: relative;
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: 300;
+    list-style: none;
+}
+
+details summary:after {
+    content: "✚";
+    color: white;
+    position: absolute;
+    font-size: 2.5rem;
+    line-height: 0;
+    margin-top: 0.75rem;
+    right: 75px;
+    font-weight: 200;
+    transform-origin: center;
+    transition: 200ms linear;
+}
+
+details[open] summary:after {
+    transform: rotate(45deg);
+    font-size: 2.5rem;
+}
+
+details summary {
+    outline: 0;
+}
