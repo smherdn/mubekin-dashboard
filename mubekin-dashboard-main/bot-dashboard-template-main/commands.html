@@ -1,0 +1,1037 @@
+﻿<!--
+    Example Command Box
+    ---------------------------
+    <div class="card card-num">
+        <p id="command_name">
+        <i class="fa-duotone fa-plus"></i> command_name <i class="parameter"><i><</i>parameter_type<i>></i> (You can add more parameters or none.)
+        <br /><i class="alias">Aliases: aliases</i>
+        </p>
+        <br />
+        <p class="card__apply">
+        <a class="card__link" href="#">Learn More ➤</a>
+        </p>
+    </div>
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Commands - Mubekin</title>
+    <link rel="stylesheet" href="cards.css" />
+</head>
+<body>
+    <br />
+    <div id="header_stuff">
+        <p id="mube_cmds"> Mubekin Commands <img onclick="location.href = 'http://mubekin.ga';" id="mube_logo" src="https://i.ibb.co/Dpz7FCb/mubekin.webp" /></p><br />
+        <p id="mube_cmds_info">310 commands | 14 categories</p>
+    </div>
+    <br /><hr /><br />
+    <details>
+        <summary>&nbsp; Chatbot Commands</summary>
+        <div class="card-container">
+            <div class="card card-1">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> chatbot-set
+                </p>
+                <h2 class="card__title"></h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn more ➤</a>
+                </p>
+            </div>
+            <div class="card card-2">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> chatbot-disable
+                </p>
+                <h2 class="card__title"></h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn more ➤</a>
+                </p>
+            </div>
+        </div>
+    </details><br />
+    <hr /><br />
+    <details>
+        <summary>&nbsp; Moderation Commands</summary>
+        <br />
+        <div class="card-container">
+            <div class="card card-3">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> purge <i class="parameter"><<i>number</i>></i>
+                    <br /><i class="alias">Aliases: clear, delete</i>
+                </p>
+                <br /><h2 class="card__title">Deletes the amount of number given from the channel.</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn more ➤</a>
+                </p>
+            </div>
+            <div class="card card-4">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> userid <i class="parameter"><i><</i>@user<i>></i></i>
+                    <br /><i class="alias">Aliases: uid</i>
+                </p>
+                <br /><h2 class="card__title">Gives the mentioned user's id.</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn more ➤</a>
+                </p>
+            </div>
+            <div class="card card-5">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> lockchannel <i class="parameter"><i><</i>#channel<i>></i></i>
+                    <br /><i class="alias">Aliases: lock</i>
+                </p>
+                <br /><h2 class="card__title">Locks the mentioned channel.</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn more ➤</a>
+                </p>
+            </div>
+            <div class="card card-6">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> mute <i class="parameter"><i><</i>@user<i>></i></i> <i class="parameter"><i><</i>time<i>></i></i>
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">Mutes the mentioned user for entered time.</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn more ➤</a>
+                </p>
+            </div>
+            <div class="card card-7">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> say <i class="parameter"><i><</i>text<i>></i></i>
+                    <br /><i class="alias">Aliases: tell, type</i>
+                </p>
+                <br /><h2 class="card__title">Says the entered text.</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn more ➤</a>
+                </p>
+            </div>
+            <div class="card card-8">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> slowmode <i class="parameter"><i><</i>time<i>></i></i>
+                    <br /><i class="alias">Aliases: smode, cooldown</i>
+                </p>
+                <br /><h2 class="card__title">Sets the slowmode of channel to the entered time.</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn more ➤</a>
+                </p>
+            </div>
+            <div class="card card-9">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> unlockchannel <i class="parameter"><i><</i>#channel<i>></i></i>
+                    <br /><i class="alias">Aliases: unlockch, unlchannel</i>
+                </p>
+                <br /><h2 class="card__title">Unlocks the mentioned channel.</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn more ➤</a>
+                </p>
+            </div>
+            <div class="card card-10">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> unmute <i class="parameter"><i><</i>@user<i>></i></i>
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><br /><h2 class="card__title">Unmutes the mentioned user.</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn more ➤</a>
+                </p>
+            </div>
+            <div class="card card-11">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> warn <i class="parameter"><i><</i>@user<i>></i></i> <i class="parameter"><i><</i>reason<i>></i></i>
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">Warns the mentioned user for entered reason.</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn more ➤</a>
+                </p>
+            </div>
+            <div class="card card-12">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> resetwarns <i class="parameter"><i><</i>@user<i>></i></i>
+                    <br /><i class="alias">Aliases: rwarns, rsetwarns</i>
+                </p>
+                <br /><h2 class="card__title">Clears all the warns of the mentioned user.</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn more ➤</a>
+                </p>
+            </div>
+            <div class="card card-13">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> userinfo <i class="parameter"><i><</i>@user<i>></i></i>
+                    <br /><i class="alias">Aliases: uinfo</i>
+                </p>
+                <br /><h2 class="card__title">Sends the info of the mentioned user.</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn more ➤</a>
+                </p>
+            </div>
+            <div class="card card-14">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> addrole <i class="parameter"><i><</i>@user<i>></i></i><i class="parameter"><i><</i>@role<i>></i></i>
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">Adds the given role to the mentioned member.</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn more ➤</a>
+                </p>
+            </div>
+            <div class="card card-14">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> ban <i class="parameter"><i><</i>@user<i>></i></i><i class="parameter"><i><</i>reason<i>></i></i>
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">Adds the given role to the mentioned member.</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn more ➤</a>
+                </p>
+            </div>
+            <div class="card card-15">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> dm <i class="parameter"><i><</i>@user<i>></i></i><i class="parameter"><i><</i>message<i>></i></i>
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">DMs the given message to mentioned user.</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn more ➤</a>
+                </p>
+            </div>
+            <div class="card card-16">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> kick <i class="parameter"><i><</i>@user<i>></i></i><i class="parameter"><i><</i>reason<i>></i></i>
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">Kicks the mentioned user.</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn more ➤</a>
+                </p>
+            </div>
+            <div class="card card-17">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> removerole <i class="parameter"><i><</i>@role<i>></i></i>
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">Kicks the mentioned user.</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn more ➤</a>
+                </p>
+            </div>
+            <div class="card card-18">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> addemoji <i class="parameter"><i><</i>emoji<i>></i></i>
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">Adds the given emoji to server.</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn more ➤</a>
+                </p>
+            </div>
+            <div class="card card-19">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> unban <i class="parameter"><i><</i>@user<i>></i></i>
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">Unbans the mentioned user.</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn more ➤</a>
+                </p>
+            </div>
+        </div><br />
+    </details>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <hr />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <details>
+        <summary>&nbsp; Fun Commands</summary>
+        <br />
+        <div class="card-container">
+            <div class="card card-20">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> coinflip
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">Flip the coin: heads, tails, or... Center?</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn more ➤</a>
+                </p>
+            </div>
+            <div class="card card-21">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> corona <i class="parameter"><i><</i>@user<i>></i></i>
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">Checks if mentioned user have coronavirus. (Just for fun)</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn more ➤</a>
+                </p>
+            </div>
+            <div class="card card-22">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> drake <i class="parameter"><i><</i>wrong<i>></i></i> <i class="parameter"><i><</i>correct<i>></i></i>
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">Make your own drake meme.</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn more ➤</a>
+                </p>
+            </div>
+            <div class="card card-23">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> eightball <i class="parameter"><i><</i>question<i>></i></i>
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">Ask eightball a question and learn if yes or no.</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn more ➤</a>
+                </p>
+            </div>
+            <div class="card card-24">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> hack <i class="parameter"><i><</i>@user<i>></i></i>
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">Hack into someones account! (Just for fun)</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn more ➤</a>
+                </p>
+            </div>
+            <div class="card card-25">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> joke
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">Do you wanna hear a joke?</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn more ➤</a>
+                </p>
+            </div>
+            <div class="card card-26">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> meme
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">Random Reddit memes...</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn more ➤</a>
+                </p>
+            </div>
+            <div class="card card-27">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> ship <i class="parameter"><i><</i>@user1<i>></i></i> <i class="parameter"><i><</i>@user2<i>></i></i>
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">Ship two person :D</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn more ➤</a>
+                </p>
+            </div>
+            <div class="card card-28">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> snake
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">Play a game of snake.</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn more ➤</a>
+                </p>
+            </div>
+            <div class="card card-29">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> snipe <i class="parameter"><i><</i>@user<i>></i></i>
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">Snipe mentioned user's last deleted message and embarrass them.</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn more ➤</a>
+                </p>
+            </div>
+            <div class="card card-30">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> sudo <i class="parameter"><i><</i>@user<i>></i></i> <i class="parameter"><i><</i>message<i>></i></i>
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">Disguise mentioned user and say something.</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn more ➤</a>
+                </p>
+            </div>
+            <div class="card card-31">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> trigger <i class="parameter"><i><</i>@user<i>></i></i>
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">Trigger someone.</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn more ➤</a>
+                </p>
+            </div>
+            <div class="card card-32">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> howgay <i class="parameter"><i><</i>@user<i>></i></i>
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">Check if mentioned user is gay... (Just for fun)</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn more ➤</a>
+                </p>
+            </div>
+            <div class="card card-33">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> ascii <i class="parameter"><i><</i>text<i>></i></i>
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">Write a text with ASCII symbols.</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn more ➤</a>
+                </p>
+            </div>
+            <div class="card card-34">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> choose <i class="parameter"><i><</i>choice1<i>></i></i> <i class="parameter"><i><</i>choice2<i>></i></i>
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">Hard to make choices? Randomize them!</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn more ➤</a>
+                </p>
+            </div>
+            <div class="card card-35">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> reverse <i class="parameter"><i><</i>text<i>></i></i>
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">Reverse a text.</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn more ➤</a>
+                </p>
+            </div>
+            <div class="card card-35">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> emojify <i class="parameter"><i><</i>text<i>></i></i>
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">Write a text with emojis.</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn more ➤</a>
+                </p>
+            </div>
+            <div class="card card-36">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> avatarfusion <i class="parameter"><i><</i>@user1<i>></i></i> <i class="parameter"><i><</i>@user2<i>></i></i>
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">Merge two mentioned users' avatars.</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn more ➤</a>
+                </p>
+            </div>
+        </div>
+    </details><br />
+    <hr /><br />
+    <details>
+        <summary>&nbsp; Game Commands</summary>
+        <div class="card-container">
+            <div class="card card-37">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> akinator
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">Play <a href="http://akinator.com" target="_blank">Akinator</a> in Discord.</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn more ➤</a>
+                </p>
+            </div>
+            <div class="card card-38">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> battleship <i class="parameter"><i><</i>@user<i>></i></i>
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">Have a battleship with someone.</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn more ➤</a>
+                </p>
+            </div>
+            <div class="card card-39">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> rps
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">Play rock-paper-scissors with bot.</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn more ➤</a>
+                </p>
+            </div>
+            <div class="card card-40">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> trivia
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">Get a random trivia question.</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn more ➤</a>
+                </p>
+            </div>
+            <div class="card card-41">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> hangman
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">Play hangman with your friends.</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn more ➤</a>
+                </p>
+            </div>
+            <div class="card card-42">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> tictactoe <i class="parameter"><i><</i>@user<i>></i></i>
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">Play tic-tac-toe with mentioned user.</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn more ➤</a>
+                </p>
+            </div>
+            <div class="card card-43">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> fight <i class="parameter"><i><</i>@user<i>></i></i>
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">Fight against mentioned user.</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn more ➤</a>
+                </p>
+            </div>
+        </div>
+    </details><br />
+    <hr /><br />
+    <details>
+        <summary>&nbsp; Image Commands</summary>
+        <div class="card-container">
+            <div class="card card-44">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> 3000years
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">...</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn More ➤</a>
+                </p>
+            </div>
+            <div class="card card-45">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> affect <i class="parameter"><i><</i>@user<i>></i></i>
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">Create an "It doesn't affect to my baby" meme.</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn More ➤</a>
+                </p>
+            </div>
+            <div class="card card-46">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> beautiful <i class="parameter"><i><</i>@user<i>></i></i>
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">Create an "This is beautiful" meme.</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn More ➤</a>
+                </p>
+            </div>
+            <div class="card card-47">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> captcha <i class="parameter"><i><</i>@user<i>></i></i>
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">...</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn More ➤</a>
+                </p>
+            </div>
+
+            <div class="card card-48">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> changemymind <i class="parameter"><i><</i>text<i>></i></i>
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">Create a "Change My Mind" meme with given text.</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn More ➤</a>
+                </p>
+            </div>
+            <div class="card card-49">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> colorify <i class="parameter"><i><</i>@user<i>></i></i> <i class="parameter"><i><</i>color<i>></i></i>
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">Recolors the mentioned user's avatar with the given color.</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn More ➤</a>
+                </p>
+            </div>
+            <div class="card card-50">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> dislike
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">...</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn More ➤</a>
+                </p>
+            </div>
+
+            <div class="card card-51">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> facepalm <i class="parameter"><i><</i>@user<i>></i></i>
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">Create a facepalm meme with someone's avatar.</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn More ➤</a>
+                </p>
+            </div>
+
+            <div class="card card-52">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> gay <i class="parameter"><i><</i>@user<i>></i></i>
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">Make mentioned user gay! (Just for fun)</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn More ➤</a>
+                </p>
+            </div>
+            <div class="card card-53">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> glass <i class="parameter"><i><</i>@user<i>></i></i>
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">Make mentioned user avatar transparent.</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn More ➤</a>
+                </p>
+            </div>
+            <div class="card card-54">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> jail <i class="parameter"><i><</i>@user<i>></i></i>
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">Send mentioned user to jail. :'(</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn More ➤</a>
+                </p>
+            </div>
+            <div class="card card-55">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> cat
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">Get a random cute cat image.</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn More ➤</a>
+                </p>
+            </div>
+            <div class="card card-56">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> dog
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">Get a random cute dog image.</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn More ➤</a>
+                </p>
+            </div>
+            <div class="card card-57">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> fox
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">Get a random cute fox image.</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn More ➤</a>
+                </p>
+            </div>
+            <div class="card card-58">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> kangaroo
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">Get a random cute kangaroo image.</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn More ➤</a>
+                </p>
+            </div>
+            <div class="card card-59">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> seal
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">Get a random cute seal image.</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn More ➤</a>
+                </p>
+            </div>
+            <div class="card card-60">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> maps <i class="parameter"><i><</i>country<i>></i></i>
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">Get information about given country.</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn More ➤</a>
+                </p>
+            </div>
+            <div class="card card-61">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> rickroll
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">Rickroll your friends. <br /><strong>Never gonna give you up, never gonna let you down!</strong></h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn More ➤</a>
+                </p>
+            </div>
+            <div class="card card-62">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> scary <i class="parameter"><i><</i>@user<i>></i></i>
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">Editing image and send scary one!</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn More ➤</a>
+                </p>
+            </div>
+            <div class="card card-63">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> shame <i class="parameter"><i><</i>@user<i>></i></i>
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">...</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn More ➤</a>
+                </p>
+            </div>
+            <div class="card card-64">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> simp
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">...</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn More ➤</a>
+                </p>
+            </div>
+            <div class="card card-65">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> smartcat <i class="parameter"><i><</i>@user<i>></i></i>
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">Make a smart cat meme with the avatar of mentioned user.</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn More ➤</a>
+                </p>
+            </div>
+            <div class="card card-66">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> stonks <i class="parameter">@user</i>
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">Make a stonks meme with the avatar of mentioned user.</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn More ➤</a>
+                </p>
+            </div>
+            <div class="card card-67">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> trash
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">...</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn More ➤</a>
+                </p>
+            </div>
+            <div class="card card-68">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> wasted
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">Create a <a href="https://www.rockstargames.com/gta-v" target="_blank">GTA</a> wasted meme with the avatar of mentioned user.</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn More ➤</a>
+                </p>
+            </div>
+            <div class="card card-69">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> shit
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">Create a stepping on sh*t meme with the avatar of mentioned user.</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn More ➤</a>
+                </p>
+            </div>
+        </div>
+    </details><br />
+    <hr /><br />
+    <details>
+        <summary>&nbsp; Information Commands</summary>
+        <div class="card-container">
+            <div class="card card-70">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> botinfo
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">Information & Statistics about Mubekin.</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn More ➤</a>
+                </p>
+            </div>
+            <div class="card card-71">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> botinvite <i class="parameter"><i><</i>ID<i>></i></i>
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">Invites the bot with the given id.</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn More ➤</a>
+                </p>
+            </div>
+            <div class="card card-72">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> commandscount
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">Current number of commands.</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn More ➤</a>
+                </p>
+            </div>
+            <div class="card card-73">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> help
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">Need help? Some basic info about bot.</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn More ➤</a>
+                </p>
+            </div>
+            <div class="card card-74">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> roleinfo <i class="parameter"><i><</i>@role<i>></i></i>
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">Gives information about mentioned role.</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn More ➤</a>
+                </p>
+            </div>
+            <div class="card card-75">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> serverinfo
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">Gives information about server.</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn More ➤</a>
+                </p>
+            </div>
+            <div class="card card-76">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> userinfo <i class="parameter"><i><</i>@user<i>></i></i>
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">Gives information about mentioned user.</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn More ➤</a>
+                </p>
+            </div>
+            <div class="card card-77">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> status <i class="parameter"><i><</i>@user<i>></i></i>
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">Sends the status mentioned user.</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn More ➤</a>
+                </p>
+            </div>
+            <div class="card card-78">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> covid <i class="parameter"><i><</i>country<i>></i></i>
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">Gives information about the <a href="https://www.google.com/search?sxsrf=ALiCzsaeAMxpmNOPEus89p1-KYrQR29p6g:1660809990838&q=COVID-19&si=AC1wQDAXKblb4YtxZaDquKpQ5Js55CVph8NS1FIwBhgs6qyyHpZ7b8dKUYIVU9f1MeIqkBT08lHR90TLux0tamIVl39sNT7jEg85LatFV1wbI9oH5iBOShY%3D&biw=1920&bih=969&dpr=1#colocmid=/m/02j71">COVID-19</a> statistics of given country. (Use 'all' for total.)</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn More ➤</a>
+                </p>
+            </div>
+            <div class="card card-79">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> add-these <i class="parameter"><i><</i>emoji<i>></i></i>
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">Adds the given emoji to the server.</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn More ➤</a>
+                </p>
+            </div>
+            <div class="card card-80">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> screenshot <i class="parameter"><i><</i>url<i>></i></i>
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">Sends screenshot of given url.</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn More ➤</a>
+                </p>
+            </div>
+            <div class="card card-81">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> invite
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">Invites Mubekin.</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn More ➤</a>
+                </p>
+            </div>
+            <div class="card card-82">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> servericon
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">Sends the icon of server.</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn More ➤</a>
+                </p>
+            </div>
+        </div>
+    </details><br />
+    <hr /><br />
+    <details>
+        <summary>&nbsp; Music Commands</summary>
+        <div class="card-container">
+            <!--Music Commands here-->
+        </div>
+    </details><br />
+    <hr /><br />
+    <details>
+        <summary>&nbsp; Filter Commands</summary>
+        <div class="card-container">
+            <!--Filter Commands here-->
+        </div>
+    </details><br />
+    <hr /><br />
+    <details>
+        <summary>&nbsp; Suggestion Commands</summary>
+        <div class="card-container">
+            <div class="card card-138">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> setsuggest <i class="parameter"><i><</i>#channel<i>></i></i>
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">Set server's suggestion channel to mentioned channel.</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn More ➤</a>
+                </p>
+            </div>
+            <div class="card card-139">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> suggest <i class="parameter"><i><</i>suggestion<i>></i></i>
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">Suggest something.</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn More ➤</a>
+                </p>
+            </div>
+            <div class="card card-140">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> sreply
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">Reply a suggestion.</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn More ➤</a>
+                </p>
+            </div>
+        </div>
+    </details><br />
+    <hr /><br />
+    <details>
+        <summary>&nbsp; Giveaway Commands</summary>
+        <div class="card-container">
+            <div class="card card-141">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> create
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">Create a giveaway.</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn More ➤</a>
+                </p>
+            </div>
+            <div class="card card-141">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> end <i class="parameter"><i><</i>ID<i>></i></i>
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">Ends the giveaway with the given message id.</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn More ➤</a>
+                </p>
+            </div>
+        </div>
+    </details><br />
+    <hr /><br />
+    <details>
+        <summary>&nbsp; Ultility Commands</summary>
+        <div class="card-container">
+            <div class="card card-142">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> advice
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">Get a random life advice.</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn More ➤</a>
+                </p>
+            </div>
+            <div class="card card-143">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> announce <i class="parameter"><i><</i>#channel<i>></i></i> <i class="parameter"><i><</i>text<i>></i></i>
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">Announce given text in mentioned channel.</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn More ➤</a>
+                </p>
+            </div>
+            <div class="card card-144">
+                <p id="command_name">
+                    <i class="fa-duotone fa-plus"></i> binary <i class="parameter"><i><</i>encode / decode<i>></i></i> <i class="parameter"><i><</i>value<i>></i></i>
+                    <br /><i class="alias">Aliases: ...</i>
+                </p>
+                <br /><h2 class="card__title">Encode a text to binary or decode a binary code to text.</h2><br />
+                <p class="card__apply">
+                    <a class="card__link" href="#">Learn More ➤</a>
+                </p>
+            </div>
+        </div>
+    </details><br />
+    <hr /><br />
+    <details>
+        <summary>&nbsp; AutoMod Commands</summary>
+        <div class="card-container">
+            <!--AutoMod Commands here-->
+        </div>
+    </details><br />
+    <hr /><br />
+    <details>
+        <summary>&nbsp; SoundBoard Commands</summary>
+        <div class="card-container">
+            <!--SoundBoard Commands here-->
+        </div>
+    </details>
+</body>
+</html>
+<script src="https://kit.fontawesome.com/dc64b696c9.js" crossorigin="anonymous"></script>
